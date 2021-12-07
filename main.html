@@ -1,57 +1,75 @@
 <!DOCTYPE HTML>
 <html>
 
+<head>
+	<script src="./js/attachment-demo.js"></script>
+</head>
+
 <body>
 <h1>The Attachment Energy Model</h1>
 
-<svg	onload = makeDraggable(evt)
-	width = "1000" height = "1000">
+<svg	id = "attachmentDiagram"
+		onload = makeDraggable(evt)
+		width = "1000" height = "1000">
 
-        <rect   x = "5"
+    <rect   x = "5"
         	y = "5"
-                width = "990"
-                height = "990"
-		fill = "white"
-		stroke = "black"
-		stroke-width = "3" />
-
-	<polygon	points = "
-				500, 450 
-				550, 475 
-				550, 525 
-				500, 550 
-				450, 525 
-				450, 475"
+            width = "990"
+            height = "990"
 			fill = "white"
 			stroke = "black"
 			stroke-width = "3" />
-	<param name="blep" value="300" />
+<!--
+	<line	x1 = "500"
+			y1 = "500"
+			x2 = "500"
+			y2 = "465"
+			stroke = "black"
+			stroke-width = 3px />
 
-	<path	d = "	M 300 450 
+	<line	x1 = "500"
+			y1 = "500"
+			x2 = "475"
+			y2 = "510"
+			stroke = "black"
+			stroke-width = 3px />
 
-			L 350 475
-			L 350 525
+	<line	x1 = "500"
+			y1 = "500"
+			x2 = "525"
+			y2 = "510"
+			stroke = "black"
+			stroke-width = 3px />
 
-			L 300 550
+	<circle	cx = "500"
+			cy = "500"
+			r = "10"
+			fill = "#444444"
+			stroke = "black"
+			stroke-width = "3" />
 
-			L 250 525
-			L 250 475
-			
-			L 300 450"
-		fill = "white"
-		stroke = "black"
-		stroke-width = "3" />
+	<circle	cx = "500"
+			cy = "465"
+			r = "10"
+			fill = "red"
+			stroke = "black"
+			stroke-width = "3" />
+-->
+	<circle	cx = "475"
+			cy = "510"
+			r = "10"
+			fill = "#EEEEEE"
+			stroke = "black"
+			stroke-width = "3" />
 
-	<path	d = "	M 110 100
-			L 150 100
-			L 150 150
-			L 100 150
-			L 100 110
-			C 100, 100 100, 100 110, 100"
-		fill = "white"
-		stroke = "black"
-		stroke-width = "3" />
+	<circle	cx = "525"
+			cy = "510"
+			r = "10"
+			fill = "#EEEEEE"
+			stroke = "black"
+			stroke-width = "3" />
 
+	<circle id = "circleCutoff" cx = "500" cy = "500" r = "150" fill = white fill-opacity = 0 stroke = "black" stroke-width = "3"/>
     </svg>
 
 </body>
