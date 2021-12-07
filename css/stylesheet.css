@@ -1,0 +1,35 @@
+:root {
+    --line-width: 3px;
+}
+table, th, td {
+    border: var(--line-width) solid black;
+    border-collapse: collapse;
+    text-align: center;
+    font-family: "Courier New", monospace;
+}
+
+th {
+    width: 200px;
+}
+
+circle {
+    stroke: black;
+    stroke-width: var(--line-width);
+}
+
+circle.carbon {
+    fill: #444444;
+}
+
+circle.oxygen {
+    fill: #FF0000;
+}
+
+circle.hydrogen {
+    fill: #EEEEEE;
+}
+
+line.bond {
+    stroke: black;
+    stroke-width: var(--line-width);
+}
